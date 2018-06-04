@@ -1,0 +1,62 @@
+/** Demo.less **/
+
+
+// Import
+@import "normalize";
+
+
+// Fonts
+
+.regular {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+}
+.semi-bold {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+}
+
+
+// Basics
+
+body {
+  .regular;
+}
+
+// Stage
+
+.stage {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+// Gallery
+
+.gallery li {
+  border: 1.25rem solid transparent;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 60em) {
+
+
+  // Stage
+
+  .stage {
+    padding: 10rem 0;
+  }
+
+
+  // Gallery
+  .gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery li {
+    width: 33.3333%;
+  }
+
+}

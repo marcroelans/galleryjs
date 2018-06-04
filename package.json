@@ -6,7 +6,9 @@
   "scripts": {
     "build": "webpack --config webpack/webpack.production.config.js",
     "dev": "webpack --config webpack/webpack.development.config.js",
-    "watch": "webpack --watch --config webpack/webpack.development.config.js"
+    "watch-js": "webpack --watch --config webpack/webpack.development.config.js",
+    "css": "lessc styles/index.less dist/gallery.css -x",
+    "css-demo": "lessc styles/demo.less docs/demo.css -x"
   },
   "author": "NEULAND. Medienagentur",
   "license": "MIT",
